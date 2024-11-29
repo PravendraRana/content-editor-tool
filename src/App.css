@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* General Layout Styles */
+.layout {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.hero-side-content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #2575fc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.features-container {
+  display: grid;
+  gap: 20px;
+}
+
+.features-container.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.features-container.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.feature-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light background color for contrast */
+  color: #333; /* Darker text color for readability */
+  min-height: 200px; /* Ensure sufficient height for vertical centering */
+  box-sizing: border-box; /* Include padding in height calculation */
+  overflow: hidden; /* Prevent overflow beyond the viewport */
+}
+
+.about-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px; /* Limit text width for better readability */
+  margin: 0 auto; /* Centers content horizontally */
+  overflow-y: auto; /* Allows vertical scrolling if content overflows */
+}
+
+/* Rich Text Editor */
+.content-editor {
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 100px;
+  overflow-y: auto;
+}
+
+.editor-toolbar {
+  margin-bottom: 10px;
+}
+
+/* Preview Mode */
+.preview-mode {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.editor-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #2575fc;
+  color: white;
+  border-radius: 4px;
+}
+
+.editor-buttons button:hover {
+  background-color: #1a5bb8;
+}
